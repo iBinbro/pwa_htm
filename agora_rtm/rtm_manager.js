@@ -21,7 +21,7 @@ async function appInitRtm(appId, uid, token) {
 
 	rtm.on("ConnectionStateChanged", async (state, reason) => {
 		callFlutterWebRtmConnectionState(state, reason);
-		callFlutterWebRecordLog('state ${state} reason ${reason}');
+		callFlutterWebRecordLog(`state ${state} reason ${reason}`);
 	})
 
 	let options = {
